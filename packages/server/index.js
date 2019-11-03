@@ -47,7 +47,7 @@ async function _watch(auth) {
   const watchRes = await gmail.users.watch({
     userId: 'me',
     requestBody: {
-      topicName: 'projects/inbox-actions-1572042678872/topics/mailbox-changes',
+      topicName: 'projects/gcloud-server-v1/topics/inbox-change',
     },
   }).catch((err) => {
     console.log('The API returned an error: ' + err);
