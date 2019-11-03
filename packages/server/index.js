@@ -53,7 +53,11 @@ async function _watch(auth) {
     console.log('The API returned an error: ' + err);
   });
 
-  console.log(watchRes.data);
+  if (watchRes.data) {
+    console.log('watching inbox');
+    console.log(watchRes.data);
+  }
+  
 }
 
 function init() {
